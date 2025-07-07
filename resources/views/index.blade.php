@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <nav class="bg-white border-gray-200 fixed top-0 left-0 w-full z-50">
+        <nav class="bg-white border-gray-200 fixed top-0 left-0 w-full z-50 font-roboto">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
@@ -55,7 +55,7 @@
             </div>
         </nav>
 
-        <main class="mt-16 relative text-white">
+        <header class="mt-16 relative text-white font-roboto">
             <div class="absolute inset-0 bg-fixed bg-center bg-cover z-0"
                 style="background-image: url('{{ asset('storage/laptop-background.jpeg') }}');">
             </div>
@@ -63,16 +63,15 @@
             <!-- Overlay Gelap -->
             <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
 
-            <div class="relative px-6 space-y-8 py-20 pr-20 z-20">
-                <h2>we are trusted our customers</h2>
-                <h1>We Provide Experts To
-                    Great Value For Business</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptas ducimus error
-                    explicabo.
-                    Nihil sit pariatur quis et ea error labore ab laborum, aliquid repellat.</p>
-                <a href="">Contact Us</a>
+            <div class="relative px-6 py-20 pr-18 z-20 space-y-4">
+                <a class="capitalize bg-blue-950 px-4 py-2 text-sm inline-block">we are trusted our customers</a>
+                <h1 class="text-3xl font-semibold leading-relaxed">We Provide Experts To Great Value For Business</h1>
+                <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsa repudiandae
+                    ea labore nemo voluptate earum et? Ad, temporibus enim?</p>
+                <a href="" class="bg-blue-950 text-base px-10 py-3 rounded-lg font-medium inline-block">Contact
+                    Us</a>
             </div>
-        </main>
+        </header>
     </body>
 
 </html>
