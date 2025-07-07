@@ -62,14 +62,19 @@
             <!-- Overlay Gelap -->
             <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
 
-            <div class="relative px-6 py-20 pr-18 z-20 space-y-4">
+            <div class="relative px-6 py-20 pr-18 z-20 space-y-4 max-w-3xl md:max-w-2xl lg:pl-14">
                 <a class="capitalize bg-blue-950 px-4 py-2 text-sm inline-block">we are trusted our customers</a>
-                <h1 class="text-3xl font-semibold leading-relaxed">We Provide Experts To Great Value For Business</h1>
+                <h1 class="text-3xl font-semibold leading-relaxed md:max-w-sm md:text-4xl lg:max-w-xl lg:text-5xl">We
+                    Provide
+                    Experts To Great
+                    Value For
+                    Business</h1>
                 <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsa repudiandae
                     ea labore nemo voluptate earum et? Ad, temporibus enim?</p>
                 <a href="" class="bg-blue-950 text-base px-10 py-3 rounded-lg font-medium inline-block">Contact
                     Us</a>
             </div>
+
         </header>
     </body>
 
