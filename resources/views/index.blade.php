@@ -95,6 +95,34 @@
                 </article>
             @endforeach
         </section>
+
+        <main class="text-gray-900 px-6 pr-10 py-10 space-y-10 md:flex md:flex-row">
+            <div class="capitaize flex flex-col space-y-4">
+                <h3 class="text-blue-950 uppercase text-2xl font-bold">Who we are</h3>
+                <h2 class="text-gray-900 font-medium text-4xl">Welcome To Business Our Solution Company</h2>
+                <p class="text-sm text-gray-900 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin diam
+                    justo, scelerisque non felis
+                    porta, placerat vestibulum nisi. Vestibulum ac elementum massa. In rutrum quis risus quis
+                    sollicitudin. Pellentesque non eros ante. Vestibulum sed tristique massa. Quisque et feugiat risus,
+                    eu tristique felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                    turpis egestas.</p>
+                <ul>
+                    <li class="flex flex-row space-x-4">
+                        <img src="{{ asset('storage/checklist.svg') }}" alt="">
+                        <span>Lorem, ipsum dolor.</span>
+                    </li>
+                </ul>
+
+                <a href="" class="bg-blue-950 w-1/3 mx-auto text-white text-center py-2 rounded">
+                    Contact
+                </a>
+            </div>
+
+            <div class="h-96">
+                <img src="{{ asset('storage/laptop-background.jpeg') }}" alt="Anuapaya">
+            </div>
+        </main>
     </body>
 
 </html>
