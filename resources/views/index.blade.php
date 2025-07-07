@@ -74,8 +74,27 @@
                 <a href="" class="bg-blue-950 text-base px-10 py-3 rounded-lg font-medium inline-block">Contact
                     Us</a>
             </div>
-
         </header>
+
+        <section class="text-gray-900 px-6 py-10 grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-6 md:px-10 lg:px-16">
+            @foreach (collect($cards)->slice(0)->take(3) as $card)
+                <article
+                    class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition duration-300 {{ $card['class'] ?? '' }}">
+                    <div class="space-y-2">
+                        <figure>
+                            <img src="{{ asset('storage/' . $card['image']) }}" alt="{{ $card['title'] }}"
+                                class="w-12 h-12 mb-4" loading="lazy">
+                        </figure>
+                        <h3 class="text-2xl font-semibold tracking-tight text-gray-900 capitalize min-h-[3.5rem]">
+                            {{ $card['title'] }}
+                        </h3>
+                        <p class="text-gray-700 text-justify">
+                            {{ $card['description'] }}
+                        </p>
+                    </div>
+                </article>
+            @endforeach
+        </section>
     </body>
 
 </html>
