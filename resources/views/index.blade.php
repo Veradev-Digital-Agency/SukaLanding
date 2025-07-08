@@ -96,33 +96,34 @@
             @endforeach
         </section>
 
-        <main class="text-gray-900 px-6 pr-10 py-10 space-y-10 md:flex md:flex-row">
-            <div class="capitaize flex flex-col space-y-4">
+        <main class="text-gray-900 px-10 py-10 space-y-10 md:space-y-0 md:flex md:gap-x-12 items-center">
+            <!-- Konten Kiri -->
+            <div class="capitalize flex flex-col space-y-4 md:w-1/2">
                 <h3 class="text-blue-950 uppercase text-2xl font-bold">Who we are</h3>
                 <h2 class="text-gray-900 font-medium text-4xl">Welcome To Business Our Solution Company</h2>
-                <p class="text-sm text-gray-900 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin diam
-                    justo, scelerisque non felis
-                    porta, placerat vestibulum nisi. Vestibulum ac elementum massa. In rutrum quis risus quis
-                    sollicitudin. Pellentesque non eros ante. Vestibulum sed tristique massa. Quisque et feugiat risus,
-                    eu tristique felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                    turpis egestas.</p>
+                <p class="text-sm text-gray-900 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin diam justo, scelerisque non felis
+                    porta, placerat vestibulum nisi. Vestibulum ac elementum massa...
+                </p>
                 <ul>
-                    <li class="flex flex-row space-x-4">
-                        <img src="{{ asset('storage/checklist.svg') }}" alt="">
+                    <li class="flex items-center space-x-4">
+                        <img src="{{ asset('storage/checklist.svg') }}" alt="" class="w-5 h-5">
                         <span>Lorem, ipsum dolor.</span>
                     </li>
                 </ul>
-
-                <a href="" class="bg-blue-950 w-1/3 mx-auto text-white text-center py-2 rounded">
+                <a href="#"
+                    class="bg-blue-950 w-1/2 text-white text-center py-2 rounded self-center md:self-start md:w-1/3">
                     Contact
                 </a>
             </div>
 
-            <div class="h-96">
-                <img src="{{ asset('storage/laptop-background.jpeg') }}" alt="Anuapaya">
+            <!-- Gambar Kanan -->
+            <div class="md:w-1/2 h-72 md:h-96">
+                <img src="{{ asset('storage/laptop-background.jpeg') }}" alt="Anuapaya"
+                    class="w-full h-full object-cover rounded-lg shadow">
             </div>
         </main>
+
     </body>
 
 </html>
