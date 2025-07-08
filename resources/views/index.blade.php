@@ -161,21 +161,39 @@
             </div>
         </section>
 
-        <section class="text-gray-900 p-10 space-y-10"
-            style="background-image: url('{{ asset('storage/bg-white.jpeg') }}'); background-size: cover;">
+        <section class="text-gray-900 p-10 space-y-10">
             <div class="text-center space-y-4">
-                <h3 class="uppercase text-blue-950 text-2xl font-bold">Success with US</h3>
-                <h2 class="capitalize font-medium text-4xl">Why Choose Us</h2>
-                <p class="text-md font-medium md:mx-auto md:max-w-2xl">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing
-                    elit. Proin
-                    diam
-                    justo, scelerisque
-                    non felis
+                <h3 class="uppercase text-blue-950 text-2xl font-bold">EXPLORE OUR SERVICES</h3>
+                <h2 class="capitalize font-medium text-4xl">Our Professional Services</h2>
+                <p class="text-md font-medium md:mx-auto md:max-w-2xl">it. Proin diam justo, scelerisque non felis
                     porta, placerat vestibulum nisi. Vestibulum ac elementum massa. In rutrum quis risus quis
                     sollicitudin. Pellentesque non eros ante. Vestibulum sed tristique massa.</p>
             </div>
+
+            <div class="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-6 md:px-10 lg:px-20">
+                @foreach (collect($cards)->slice(0)->take(3) as $card)
+                    <article
+                        class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition duration-300 {{ $card['class'] ?? '' }}">
+                        <div class="space-y-2 flex flex-row space-x-6">
+                            <figure>
+                                <img src="{{ asset('storage/' . $card['image']) }}" alt="{{ $card['title'] }}"
+                                    class="w-12 h-12 mb-4" loading="lazy">
+                            </figure>
+                            <div>
+                                <h3
+                                    class="text-2xl font-semibold tracking-tight text-blue-950 capitalize min-h-[3.5rem]">
+                                    {{ $card['title'] }}
+                                </h3>
+                                <p class="text-blue-950 text-justify">
+                                    {{ $card['description'] }}
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                @endforeach
+            </div>
         </section>
+
     </body>
 
 </html>
