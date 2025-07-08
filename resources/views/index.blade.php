@@ -129,7 +129,7 @@
             <div class="text-center space-y-4">
                 <h3 class="uppercase text-blue-950 text-2xl font-bold">Success with US</h3>
                 <h2 class="capitalize font-medium text-4xl">Why Choose Us</h2>
-                <p class="text-mdont-medium md:mx-auto md:max-w-2xl">Lorem ipsum dolor sit amet, consectetur
+                <p class="text-md font-medium md:mx-auto md:max-w-2xl">Lorem ipsum dolor sit amet, consectetur
                     adipiscing
                     elit. Proin
                     diam
@@ -141,7 +141,7 @@
 
             <div class="grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-6 lg:px-20 lg:gap-x-10 ">
                 @foreach (collect($cards)->slice(3)->take(3) as $card)
-                    <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                    <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-xl overflow-hidden">
                         <figure>
                             <img src="{{ asset('storage/' . $card['image']) }}" alt="{{ $card['title'] }}"
                                 class="w-full h-48 object-cover rounded-t-lg" />
@@ -158,6 +158,22 @@
                         </section>
                     </article>
                 @endforeach
+            </div>
+        </section>
+
+        <section class="text-gray-900 p-10 space-y-10"
+            style="background-image: url('{{ asset('storage/bg-white.jpeg') }}'); background-size: cover;">
+            <div class="text-center space-y-4">
+                <h3 class="uppercase text-blue-950 text-2xl font-bold">Success with US</h3>
+                <h2 class="capitalize font-medium text-4xl">Why Choose Us</h2>
+                <p class="text-md font-medium md:mx-auto md:max-w-2xl">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit. Proin
+                    diam
+                    justo, scelerisque
+                    non felis
+                    porta, placerat vestibulum nisi. Vestibulum ac elementum massa. In rutrum quis risus quis
+                    sollicitudin. Pellentesque non eros ante. Vestibulum sed tristique massa.</p>
             </div>
         </section>
     </body>
