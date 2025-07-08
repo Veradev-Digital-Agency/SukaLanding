@@ -194,6 +194,20 @@
             </div>
         </section>
 
+        <section class="text-white p-10 space-y-8 bg-blue-950 text-center">
+            <h2 class="capitalize font-medium text-4xl">Get To Know us better</h2>
+            <ul class="flex flex-col space-y-6">
+                <li class="flex flex-col items-center justify-center font-semibold space-y-1">
+                    <span class="text-4xl font-bold">120+</span>
+                    <span class="text-2xl">Happy Clients</span>
+                </li>
+
+                <li class="flex flex-col items-center justify-center font-semibold space-y-1">
+                    <span class="text-4xl font-bold">120+</span>
+                    <span class="text-2xl">Happy Clients</span>
+                </li>
+            </ul>
+        </section>
     </body>
 
 </html>
