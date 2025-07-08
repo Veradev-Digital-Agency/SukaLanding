@@ -96,12 +96,12 @@
             @endforeach
         </section>
 
-        <main class="text-gray-900 px-10 py-10 space-y-10 md:space-y-0 md:flex md:gap-x-12 items-center">
+        <main class="text-gray-900 px-10 py-18 space-y-10 md:space-y-0 md:flex md:gap-x-12 items-center">
             <!-- Konten Kiri -->
             <div class="capitalize flex flex-col space-y-4 md:w-1/2">
                 <h3 class="text-blue-950 uppercase text-2xl font-bold">Who we are</h3>
-                <h2 class="text-gray-900 font-medium text-4xl">Welcome To Business Our Solution Company</h2>
-                <p class="text-sm text-gray-900 text-justify">
+                <h2 class="font-medium text-4xl">Welcome To Business Our Solution Company</h2>
+                <p class="text-sm text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin diam justo, scelerisque non felis
                     porta, placerat vestibulum nisi. Vestibulum ac elementum massa...
                 </p>
@@ -112,7 +112,7 @@
                     </li>
                 </ul>
                 <a href="#"
-                    class="bg-blue-950 w-1/2 text-white text-center py-2 rounded self-center md:self-start md:w-1/3">
+                    class="bg-blue-950 w-1/2 text-white text-center py-2 rounded self-center mt-4 md:self-start md:w-1/3">
                     Contact
                 </a>
             </div>
@@ -124,6 +124,42 @@
             </div>
         </main>
 
+        <section class="text-gray-900 p-10 space-y-10"
+            style="background-image: url('{{ asset('storage/bg-white.jpeg') }}'); background-size: cover;">
+            <div class="text-center space-y-4">
+                <h3 class="uppercase text-blue-950 text-2xl font-bold">Success with US</h3>
+                <h2 class="capitalize font-medium text-4xl">Why Choose Us</h2>
+                <p class="text-mdont-medium md:mx-auto md:max-w-2xl">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit. Proin
+                    diam
+                    justo, scelerisque
+                    non felis
+                    porta, placerat vestibulum nisi. Vestibulum ac elementum massa. In rutrum quis risus quis
+                    sollicitudin. Pellentesque non eros ante. Vestibulum sed tristique massa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-6 lg:px-20 lg:gap-x-10 ">
+                @foreach (collect($cards)->slice(3)->take(3) as $card)
+                    <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                        <figure>
+                            <img src="{{ asset('storage/' . $card['image']) }}" alt="{{ $card['title'] }}"
+                                class="w-full h-48 object-cover rounded-t-lg" />
+                        </figure>
+                        <section class="p-5">
+                            <header>
+                                <h2 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+                                    {{ $card['title'] }}
+                                </h2>
+                            </header>
+                            <p class="mb-3 font-base text-gray-700 text-justify">
+                                {{ $card['description'] }}
+                            </p>
+                        </section>
+                    </article>
+                @endforeach
+            </div>
+        </section>
     </body>
 
 </html>
