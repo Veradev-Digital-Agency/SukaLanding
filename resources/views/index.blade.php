@@ -194,19 +194,36 @@
             </div>
         </section>
 
-        <section class="text-white p-10 space-y-8 bg-blue-950 text-center">
-            <h2 class="capitalize font-medium text-4xl">Get To Know us better</h2>
-            <ul class="flex flex-col space-y-6">
-                <li class="flex flex-col items-center justify-center font-semibold space-y-1">
+        <section
+            class="text-white p-10 bg-blue-950 text-center lg:text-left lg:flex lg:items-center lg:justify-between lg:px-20">
+            <h2 class="capitalize font-medium text-4xl mb-8 lg:mb-0">
+                Get to know us better
+            </h2>
+
+            <ul class="flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-10">
+                <li class="flex flex-col items-center lg:items-start font-semibold space-y-1">
                     <span class="text-4xl font-bold">120+</span>
                     <span class="text-2xl">Happy Clients</span>
                 </li>
-
-                <li class="flex flex-col items-center justify-center font-semibold space-y-1">
-                    <span class="text-4xl font-bold">120+</span>
-                    <span class="text-2xl">Happy Clients</span>
+                <li class="flex flex-col items-center lg:items-start font-semibold space-y-1">
+                    <span class="text-4xl font-bold">80+</span>
+                    <span class="text-2xl">Projects Delivered</span>
+                </li>
+                <li class="flex flex-col items-center lg:items-start font-semibold space-y-1">
+                    <span class="text-4xl font-bold">15</span>
+                    <span class="text-2xl">Awards Won</span>
                 </li>
             </ul>
+        </section>
+
+        <section class="text-gray-900 p-10 space-y-10">
+            <div class="text-center space-y-4">
+                <h3 class="uppercase text-blue-950 text-2xl font-bold">EXPLORE OUR SERVICES</h3>
+                <h2 class="capitalize font-medium text-4xl">Our Professional Services</h2>
+                <p class="text-md font-medium md:mx-auto md:max-w-2xl">it. Proin diam justo, scelerisque non felis
+                    porta, placerat vestibulum nisi. Vestibulum ac elementum massa. In rutrum quis risus quis
+                    sollicitudin. Pellentesque non eros ante. Vestibulum sed tristique massa.</p>
+            </div>
         </section>
     </body>
 
