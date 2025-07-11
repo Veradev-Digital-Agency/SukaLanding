@@ -76,7 +76,7 @@
         </div>
     </header>
 
-    <section class="text-gray-900 px-6 py-10 grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-6 md:px-10 lg:px-16">
+    <section class="font-roboto text-gray-900 px-6 py-10 grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-6 md:px-10 lg:px-16">
         @foreach (collect($cards)->slice(0)->take(3) as $card)
             <article
                 class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition duration-300 {{ $card['class'] ?? '' }}">
@@ -96,7 +96,7 @@
         @endforeach
     </section>
 
-    <main class="text-gray-900 px-10 py-18 space-y-10 md:space-y-0 md:flex md:gap-x-12 items-center">
+    <main class="font-roboto text-gray-900 px-10 py-18 space-y-10 md:space-y-0 md:flex md:gap-x-12 items-center">
         <!-- Konten Kiri -->
         <div class="capitalize flex flex-col space-y-4 md:w-1/2">
             <h3 class="text-blue-950 uppercase text-2xl font-bold">Who we are</h3>
@@ -124,7 +124,7 @@
         </div>
     </main>
 
-    <section class="text-gray-900 p-10 space-y-10"
+    <section class="text-gray-900 p-10 space-y-10 font-roboto"
         style="background-image: url('{{ asset('storage/bg-white.jpeg') }}'); background-size: cover;">
         <div class="text-center space-y-4">
             <h3 class="uppercase text-blue-950 text-2xl font-bold">Success with US</h3>
@@ -161,7 +161,7 @@
         </div>
     </section>
 
-    <section class="text-gray-900 p-10 space-y-10">
+    <section class="text-gray-900 p-10 space-y-10 font-roboto">
         <div class="text-center space-y-4">
             <h3 class="uppercase text-blue-950 text-2xl font-bold">EXPLORE OUR SERVICES</h3>
             <h2 class="capitalize font-medium text-4xl">Our Professional Services</h2>
@@ -194,7 +194,7 @@
     </section>
 
     <section
-        class="text-white p-10 bg-blue-950 text-center lg:text-left lg:flex lg:items-center lg:justify-between lg:px-20">
+        class="text-white p-10 bg-blue-950 text-center font-roboto lg:text-left lg:flex lg:items-center lg:justify-between lg:px-20">
         <h2 class="capitalize font-medium text-4xl mb-8 lg:mb-0">
             Get to know us better
         </h2>
@@ -215,7 +215,7 @@
         </ul>
     </section>
 
-    <section class="text-gray-900 p-10 space-y-10">
+    <section class="text-gray-900 p-10 pb-18 space-y-10 font-roboto">
         <div class="text-center space-y-4">
             <h3 class="uppercase text-blue-950 text-2xl font-bold">PROJECTS</h3>
             <h2 class="capitalize font-medium text-4xl">Our Latest Projects</h2>
@@ -232,6 +232,22 @@
             @endforeach
         </div>
     </section>
+
+    <section class="text-white px-6 py-8 bg-blue-950 text-center font-roboto">
+        <div class="max-w-2xl mx-auto space-y-6">
+            <header class="space-y-1">
+          <h2 class="capitalize font-semibold text-3xl md:text-4xl">
+            Are You Looking For Professional Advice?
+          </h2>
+          <p class="text-md md:text-lg font-medium">
+            We’re here to help you grow and succeed in your business.
+          </p></header>
+          <a href="#"
+             class="inline-block bg-white text-blue-950 font-semibold px-6 py-3 rounded-lg text-lg md:text-base hover:bg-gray-200 transition">
+            Contact Us
+          </a>
+        </div>
+      </section>      
 </body>
 
 </html>
