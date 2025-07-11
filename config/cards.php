@@ -32,5 +32,32 @@ return [
       'title' => 'Business Plan',
       'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora amet eveniet similique soluta iste rerum dignissimos repellendus voluptate! Totam numquam nobis similique quo molestiae nihil amet natus iste recusandae.',
     ],
+    [
+      'image' => 'laptop-card.jpeg',
+      'title' => 'Business Plan',
+      'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora amet eveniet similique soluta iste rerum dignissimos repellendus voluptate! Totam numquam nobis similique quo molestiae nihil amet natus iste recusandae.',
+    ],
+    [
+      'image' => 'laptop-card.jpeg',
+      'title' => 'Business Plan',
+      'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora amet eveniet similique soluta iste rerum dignissimos repellendus voluptate! Totam numquam nobis similique quo molestiae nihil amet natus iste recusandae.',
+    ],
+    [
+      'image' => 'laptop-card.jpeg',
+      'title' => 'Business Plan',
+      'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora amet eveniet similique soluta iste rerum dignissimos repellendus voluptate! Totam numquam nobis similique quo molestiae nihil amet natus iste recusandae.',
+    ], [
+      'image' => 'laptop-card.jpeg',
+      'title' => 'Business Plan',
+      'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora amet eveniet similique soluta iste rerum dignissimos repellendus voluptate! Totam numquam nobis similique quo molestiae nihil amet natus iste recusandae.',
+    ], [
+      'image' => 'laptop-card.jpeg',
+      'title' => 'Business Plan',
+      'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora amet eveniet similique soluta iste rerum dignissimos repellendus voluptate! Totam numquam nobis similique quo molestiae nihil amet natus iste recusandae.',
+    ], [
+      'image' => 'laptop-card.jpeg',
+      'title' => 'Business Plan',
+      'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora amet eveniet similique soluta iste rerum dignissimos repellendus voluptate! Totam numquam nobis similique quo molestiae nihil amet natus iste recusandae.',
+    ],
   ],
 ];
