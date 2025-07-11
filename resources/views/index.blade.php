@@ -247,7 +247,75 @@
             Contact Us
           </a>
         </div>
-      </section>      
+      </section>
+      
+      <footer class="bg-gray-900 text-white pt-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-t-4 border-indigo-700/50">
+          
+          <!-- Column 1: Site Info -->
+          <div>
+            <h2 class="text-xl font-semibold mb-4">My Site</h2>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin diam justo, scelerisque non felis porta, placerat vestibulum nisi.
+            </p>
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="hover:text-indigo-500"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="hover:text-indigo-500"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="hover:text-indigo-500"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="hover:text-indigo-500"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+      
+          <!-- Column 2: Services -->
+          <div>
+            <h2 class="text-xl font-semibold mb-4">Our Services</h2>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white">Analytic Solution</a></li>
+              <li><a href="#" class="hover:text-white">Partnership System</a></li>
+              <li><a href="#" class="hover:text-white">Quality Control</a></li>
+              <li><a href="#" class="hover:text-white">Business Innovation</a></li>
+              <li><a href="#" class="hover:text-white">Product Control</a></li>
+            </ul>
+          </div>
+      
+          <!-- Column 3: Quick Links -->
+          <div>
+            <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white">Blog</a></li>
+              <li><a href="#" class="hover:text-white">Services</a></li>
+              <li><a href="#" class="hover:text-white">About</a></li>
+              <li><a href="#" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Column 4: Contact -->
+          <div>
+            <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li class="flex items-start space-x-2">
+                <svg class="w-5 h-5 text-indigo-500 mt-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13..."/></svg>
+                <span>1, My Address, My Street, New York City, NY, USA</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><path d="M21 8V7l-3 2..."/></svg>
+                <a href="mailto:contact@domain.com">contact@domain.com</a>
+              </li>
+              <li class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.91..."/></svg>
+                <span>+1234567890</span>
+              </li>
+            </ul>
+          </div>
+      
+        </div>
+      
+        <!-- Bottom Line -->
+        <div class="text-center text-sm text-gray-500 py-6 border-t border-white/10">
+          &copy; 2025 My Site. All rights reserved.
+        </div>
+      </footer>
+      
 </body>
 
 </html>
